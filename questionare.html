@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ad8a06b29d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .first{
+            display:flex;
+            background-color: rgb(54, 175, 135);
+           justify-content: center;
+            flex-direction: column;
+            height: 700px;
+        }
+        h3{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .fa-arrow-down{
+            display: flex;
+            justify-content: center;
+            background-color: white;
+           
+        }
+        #thisisfirst{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(194, 94, 70);
+        }
+        .thisisfirst1{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(194, 94, 70);
+            color: white;
+        }
+        button{
+            width: 100px;
+            margin: auto;
+            border-radius: 15px;
+            background-color: rgb(224, 208, 178);
+        }
+       p{
+           display: flex;
+           justify-content: center;
+       }
+       .s{
+           margin-top: 10px;
+       }
+       .button{
+           background-color: green;
+
+       }
+     
+    </style>
+</head>
+<body>
+<div class="first">
+    <h3>how much do you know about Ammrutha?</h3>
+    <a href="#thisisfirst"> <i class="fas fa-arrow-down"></i></a>
+
+</div>
+<div class="s"></div>
+<div id="thisisfirst" class="thisisfirst1">
+    <p>what is Ammrutha's favourite colour?</p>
+  <button id="yes" onclick="mfunction()">blue</button>
+  <button id="no">red</button>
+  <p id="random"></p>
+  </div>
+  <div class="s"></div>
+  <div class="thisisfirst1">
+    <p>what is Ammrutha's favourite animal?</p>
+  <button id="no">giraffe</button>
+  <button id="yes" onclick="mfunction()">tiger</button>
+  <p id="random"></p>
+  </div>
+  <div class="s"></div>
+  <div class="thisisfirst1">
+  <p>what is Ammrutha's favourite subject?</p>
+  <button id="no">art</button>
+  <button id="yes" onclick="mfunction()">math</button>
+  <p id="random"></p>
+  </div>
+  <div class="s"></div>
+  <div class="thisisfirst1">
+  <p>what is Ammrutha's favourite bird?</p>
+  <button id="yes" onclick="mfunction()">parrot</button>
+  <button id="no">nightingale</button>
+  <p id="random"></p>
+  </div>
+  <div class="s"></div>
+  <div class="thisisfirst1">
+    <p>what is Ammrutha's favourite fruit?</p>
+    <button id="yes" onclick="mfunction()">pinapple</button>
+    <button id="no">apricot</button>
+    <p id="random"></p>
+    </div>
+    <div class="s"></div>
+    <div class="thisisfirst1">
+        <p>what is Ammrutha's favourite book?</p>
+        <button id="no">dork diaries</button>
+        <button id="yes" onclick="mfunction()">nancy drew</button>
+        <p id="random"></p>
+        </div>
+    <div class="center">   click submit to  view your score <button class="button" onclick="submit()">submit</button> </div>
+        <p id="sco"></p>
+</body>
+<script>
+        var Fscore = 0
+   function mfunction(){
+    
+     
+        var yes = document.getElementById('yes').value
+  
+        Fscore = Fscore + 1 ;
+        console.log(yes)
+        console.log(Fscore)
+    };
+    function submit(){
+        document.getElementById("sco").innerHTML="your score is "+ Fscore
+     
+    }
+    
+</script>
+</html>
